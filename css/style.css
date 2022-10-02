@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    background: url("/img/stretched-1920-1080-1054256.jpg");
+    background-size: cover;
+    position:center;
+    overflow: hidden;
+}
+
+.header-block{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:300px;
+    height: 150px;
+}
+
+.logo{
+    width:300px;
+    height: 150px;
+}
+
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+
+    
+}
+
+
+.menu-item:not(:last-child){
+    margin-right: 30px;
+
+}
+
+.menu-item{
+    position: relative;
+    list-style: none;
+}
+
+.menu-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+.menu-link::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-image: linear-gradient(to right,rgb(227, 210, 227),rgb(180, 59, 148), rgb(67, 14, 82));
+    left: 0;
+    margin-bottom: -10px;
+    bottom:0;
+    transition: 0.5s;
+}
+
+.menu-link:hover::after{
+    width: 100%;
+}
+
+.main{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:40%;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.link-above{
+   
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding:10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    position: relative;
+    
+    
+}
+span{
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(205, 58, 227), rgb(77, 11, 200));
+    height: 100%;
+    width: 0;
+    top:0;
+    left:0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+.link-above:hover span{
+    border:none;
+    width: 100%;
+    
+    
+}
+
+
+.link-wrapper{
+    margin-left:50px;
+}
